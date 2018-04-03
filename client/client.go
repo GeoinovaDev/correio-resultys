@@ -48,7 +48,7 @@ func (e *Email) LoadFromMap(m map[string]interface{}) {
 }
 
 func (p *Correio) SendEmail(email *Email) {
-	err := p.Insert(email)
+	err := p.Create(email)
 	if err != nil {
 		return
 	}
@@ -56,7 +56,7 @@ func (p *Correio) SendEmail(email *Email) {
 	p.Send(email)
 }
 
-func (p *Correio) Insert(email *Email) (erro error) {
+func (p *Correio) Create(email *Email) (erro error) {
 
 	exec.Try(func() {
 		protocol := net.Protocol{}
