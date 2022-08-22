@@ -3,11 +3,10 @@ package correio
 import (
 	"errors"
 
-	"git.resultys.com.br/lib/lower/convert/decode"
-
-	"git.resultys.com.br/lib/lower/exec"
-	"git.resultys.com.br/lib/lower/net/request"
-	"git.resultys.com.br/lib/lower/str"
+	"github.com/GeoinovaDev/lower-resultys/convert/decode"
+	"github.com/GeoinovaDev/lower-resultys/exec"
+	"github.com/GeoinovaDev/lower-resultys/net/request"
+	"github.com/GeoinovaDev/lower-resultys/str"
 )
 
 // Client struct
